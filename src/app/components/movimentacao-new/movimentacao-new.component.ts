@@ -52,10 +52,13 @@ export class MovimentacaoNewComponent implements OnInit {
       .subscribe(
         response => {
           console.log(response);
+          alert("Descrição: "+this.descricao +", Valor: "+ this.valor +",00 R$, Tipo: "+ this.tipo +", Data/hora: "+ this.dataHora + "\n"+" SALVO!!");
         },
         error => {
           console.log(error);
+          alert("Preencha todos os campos !");
         });
   }
+  
 
 }
